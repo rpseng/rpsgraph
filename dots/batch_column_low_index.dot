@@ -1,0 +1,84 @@
+graph BatchColumn {
+// Index 3 Batch Column (Biegler) but without the optimal control equation
+// leading to a under-constrained low index problem.
+node[shape=circle,fixedsize=1]
+edge[color="gray", style="setlinewidth(2)"]
+
+// dF/dy graph
+f0--x61
+f1--x0  f1--x1  f1--x2  f1--x25 f1--x61
+f2--x2  f2--x3  f2--x25 f2--x26 f2--x61
+f3--x3  f3--x4  f3--x26 f3--x27 f3--x61
+f4--x4  f4--x5  f4--x27 f4--x28 f4--x61
+f5--x5  f5--x6  f5--x28 f5--x29 f5--x61
+f6--x6  f6--x7  f6--x29 f6--x30 f6--x61
+f7--x7  f7--x8  f7--x30 f7--x31 f7--x61
+f8--x8  f8--x9  f8--x31 f8--x32 f8--x61
+f9--x9  f9--x10 f9--x32 f9--x33 f9--x61
+f10--x10        f10--x11        f10--x33        f10--x34        f10--x61
+f11--x11        f11--x12        f11--x34        f11--x35        f11--x61
+f12--x12        f12--x35
+f13--x1 f13--x13
+f14--x2 f14--x14
+f15--x3 f15--x15
+f16--x4 f16--x16
+f17--x5 f17--x17
+f18--x6 f18--x18
+f19--x7 f19--x19
+f20--x8 f20--x20
+f21--x9 f21--x21
+f22--x10        f22--x22
+f23--x11        f23--x23
+f24--x12        f24--x24
+f25--x1 f25--x25        f25--x49
+f26--x2 f26--x26        f26--x50
+f27--x3 f27--x27        f27--x51
+f28--x4 f28--x28        f28--x52
+f29--x5 f29--x29        f29--x53
+f30--x6 f30--x30        f30--x54
+f31--x7 f31--x31        f31--x55
+f32--x8 f32--x32        f32--x56
+f33--x9 f33--x33        f33--x57
+f34--x10        f34--x34        f34--x58
+f35--x11        f35--x35        f35--x59
+f36--x12        f36--x36        f36--x60
+f37--x25        f37--x37
+f38--x26        f38--x38
+f39--x27        f39--x39
+f40--x28        f40--x40
+f41--x29        f41--x41
+f42--x30        f42--x42
+f43--x31        f43--x43
+f44--x32        f44--x44
+f45--x33        f45--x45
+f46--x34        f46--x46
+f47--x35        f47--x47
+f48--x36        f48--x48
+f49--x13        f49--x37        f49--x49
+f50--x14        f50--x38        f50--x50
+f51--x15        f51--x39        f51--x51
+f52--x16        f52--x40        f52--x52
+f53--x17        f53--x41        f53--x53
+f54--x18        f54--x42        f54--x54
+f55--x19        f55--x43        f55--x55
+f56--x20        f56--x44        f56--x56
+f57--x21        f57--x45        f57--x57
+f58--x22        f58--x46        f58--x58
+f59--x23        f59--x47        f59--x59
+f60--x24        f60--x48        f60--x60
+// dF/dyp graph
+f0--"x0'"
+f1--"x1'"
+f2--"x2'"
+f3--"x3'"
+f4--"x4'"
+f5--"x5'"
+f6--"x6'"
+f7--"x7'"
+f8--"x8'"
+f9--"x9'"
+f10--"x10'"
+f11--"x11'"
+f12--"x12'"
+
+}

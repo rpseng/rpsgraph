@@ -1,0 +1,22 @@
+// $ANTLR : Dot.g -> DotTokenTypes.txt$
+Dot    // output token vocab name
+GRAPH="graph"=4
+NODE="node"=5
+EDGE="edge"=6
+STRICT_LITERAL=7
+ID("identifier")=8
+O_BRACE=9
+C_BRACE=10
+STRING=11
+CONN=12
+O_BRACKET=13
+C_BRACKET=14
+COMMA=15
+EQUAL=16
+NUMBER=17
+SEMI=18
+COLON=19
+WS=20
+COMMENT=21
+SL_COMMENT=22
+ML_COMMENT=23

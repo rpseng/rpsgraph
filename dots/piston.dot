@@ -1,0 +1,17 @@
+graph Piston{
+// Model of a Piston with ideal gas inside (Kroner, 1997)
+node[shape=circle,fixedsize=1]
+edge[color="gray"]
+
+	// dF/dy graph
+	f1--P
+	f2--P	f2--V	f2--T
+	f3--U	f3--T
+
+	f4--V
+
+edge[color="black", style="setlinewidth(4)"]
+
+	// dF/dyp graph
+	f1--"U'"	f1--"V'"
+}

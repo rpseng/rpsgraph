@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+
+<project default="dist" basedir=".">
+	
+ <target name="dist" >
+ 	<delete file="rpsgraph.jar"/>
+ 	<jar destfile="rpsgraph.jar">
+ 	    <fileset dir="bin" includes="br/eng/rps/graph/*.class"/>
+ 	    <fileset dir="bin" includes="br/eng/rps/graph/utils/*.class"/>
+ 	    <fileset dir="bin" includes="rpsgraph/*" />
+	<manifest>
+      <attribute name="Built-By" value="${user.name}"/>
+      <attribute name="Main-Class" value="rpsgraph.Tool"/>
+    </manifest>
+ 	</jar>
+
+ </target>
+	
+ <target name="javadoc">
+        <javadoc access="public" author="true" destdir="doc" doctitle="RPSGraph - Bipartite Graph library" nodeprecated="false" nodeprecatedlist="false" noindex="false" nonavbar="false" notree="false" source="1.5" sourcefiles="src/br/eng/rps/graph/BipartiteNode.java,src/br/eng/rps/graph/Algorithms.java,src/br/eng/rps/graph/BipartiteGraph.java,src/br/eng/rps/graph/utils/Utils.java" splitindex="true" use="true" version="true"/>
+ </target>
+  
+</project>

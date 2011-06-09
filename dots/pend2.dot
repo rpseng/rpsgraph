@@ -1,0 +1,10 @@
+graph Pendulum{
+node[shape=circle,fixedsize=1]
+	xd[label="x'"]
+edge[color="gray"]
+	f_1--xd  f_1--w
+	f_2--yd  f_2--z
+	f_3--wd  f_3--T  f_3--x
+	f_4--zd  f_4--T  f_4--y
+	f_5--x   f_5--y
+}

@@ -1,0 +1,8 @@
+graph Reactor{
+node[shape=circle,fixedsize=1]
+edge[color="gray"]
+ f_1--C  f_1--R  f_1--C'
+ f_2--T  f_2--R  f_2--T_c f_2--T'
+ f_3--C  f_3--T  f_3--R
+ f_4--C
+}

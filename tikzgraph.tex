@@ -1,0 +1,47 @@
+%
+% Preamble for RPSGraph output using Tikz (PGF)
+% Tested with version 1.18
+%
+% Rafael de Pelegrini Soares - www.rps.eng.br
+% Sep - 2008
+%
+
+\usepackage{tikz}
+\usepackage{pgf}
+\usepackage{xcolor}
+
+\newcommand{\AddVar}[2]{
+\node[circle, draw, minimum height=20pt] (#1) at (#2,1) {};
+\node at (#2,1) {$#1$};
+}
+\newcommand{\AddEq}[2]{
+\node[circle, draw, minimum height=20pt] (#1) at (#2,3.5) {};
+\node at (#2,3.5) {$#1$};
+}
+\newcommand{\GrayNode}[1]{
+\pgfsetstrokecolor{gray}
+\pgfpathcircle{\pgfpointanchor{#1}{center}}{10pt}
+\pgfusepath{stroke}
+\pgftext[center, at={\pgfpointanchor{#1}{center}}]{\textcolor{gray}{$#1$}}
+}
+\newcommand{\MarkNode}[1]{
+%\pgfpathcircle{\pgfpointanchor{#1}{center}}{12pt}\pgfusepath{stroke}
+\pgfsetcolor{lightgray}
+\pgfpathcircle{\pgfpointanchor{#1}{center}}{10pt}\pgfusepath{fill}
+\pgfsetcolor{black}
+\pgfpathcircle{\pgfpointanchor{#1}{center}}{10pt}\pgfusepath{stroke}
+\pgftext[center, at={\pgfpointanchor{#1}{center}}]{$#1$}
+}
+\newcommand{\AddEdge}[2]{\draw (#1)--(#2);}
+\newcommand{\AddEdgeGray}[2]{\draw[color=gray](#1)--(#2);}
+\newcommand{\AddConn}[2]{\pgfsetlinewidth{1.5pt} \draw (#1)--(#2); \pgfsetlinewidth{0.5pt}}
+\newcommand{\AddConnGray}[2]{\pgfsetlinewidth{1.5pt} \draw[color=gray] (#1)--(#2); \pgfsetlinewidth{0.5pt}}
+\newcommand{\AddEdgeD}[2]{\draw[->, color=gray] (#1)--(#2);}
+\newcommand{\AddConnD}[2]{\pgfsetlinewidth{1.5pt} \draw[->] (#2)--(#1); \pgfsetlinewidth{0.5pt}}
+\newcommand{\AddEdgeB}[2]{\draw[->, color=gray] (#2)--(#1);}
+\newcommand{\AddEdgeGrayB}[2]{\draw[->, color=gray] (#2)--(#1);}
+\newcommand{\AddConnB}[2]{\pgfsetlinewidth{1.5pt} \draw[->] (#1)--(#2); \pgfsetlinewidth{0.5pt}}
+\newcommand{\AddConnGrayB}[2]{\pgfsetlinewidth{1.5pt} \draw[->,color=gray] (#1)--(#2); \pgfsetlinewidth{0.5pt}}
+\newcommand{\AddDiff}[2]{
+\draw[->] (#1) .. controls +(up:1cm) and +(up:1cm) .. (#2);
+}

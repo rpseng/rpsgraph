@@ -1,0 +1,10 @@
+// Graph for the example presented in work
+// "DIFFERENTIALGEBRAIC EQUATIONS OF INDEX 1 MAY HAVE AN ARBITRARILY HIGH STRUCTURAL INDEX"
+// but with the formulation which leads to a structural index 1 problem
+graph Reissig2000b {
+node[shape=circle,fixedsize=1]
+edge[color="gray"]
+	f_1--"v_1'"  f_1--"v_3'" f_1--i
+	f_2--i f_2--v_3
+	f_3--v_1
+}

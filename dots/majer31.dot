@@ -1,0 +1,8 @@
+graph Majer31{
+node[shape=circle,fixedsize=1]
+edge[color="gray"]
+	f_1--"x'"  f_1--y_1
+	f_2--x   f_2--y_1  f_2--y_2
+	f_3--y_1 f_3--y_2
+edge[color="black", style="setlinewidth(4)"]
+}

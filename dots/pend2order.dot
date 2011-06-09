@@ -1,0 +1,7 @@
+graph Pendulum2Order{
+node[shape=circle,fixedsize=1]
+edge[color="gray"]
+	f_1--"x''"  f_1--T  f_1--x
+	f_2--"y''"  f_2--T  f_2--y
+	f_3--x   f_3--y
+}

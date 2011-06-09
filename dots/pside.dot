@@ -1,0 +1,7 @@
+graph PSIDE{
+node[shape=circle,fixedsize=1]
+edge[color="gray"]
+	f--"y'"  f--z
+	k--"z'"  k--y  k--u
+	g--y
+}

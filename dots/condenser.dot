@@ -1,0 +1,20 @@
+graph Condenser{
+node[shape=circle,fixedsize=1]
+edge[color="gray"]
+
+	// dF/dy graph
+	f1--F	f1--L	
+	f2--N	f2--F	f2--L	f2--T	f2--Tin	f2--Tc	
+	f3--T	f3--P	
+	f4--N	f4--T	f4--P	f4--V	
+	f5--F
+	f6--V	
+	f7--Tin	
+	f8--Tc	
+
+edge[color="black", style="setlinewidth(4)"]
+
+	// dF/dyp graph
+	f1--"N'"	
+	f2--"T'"
+}
