@@ -1,4 +1,5 @@
 graph Ammonia {
+overlap=scale;
 // Steady State ammonia process with DOF = -1
 node[shape=circle,fixedsize=1]
 edge[color="gray", style="setlinewidth(2)"]

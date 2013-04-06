@@ -7,6 +7,7 @@
 // Execution time: 0
 // Return code: 1
 graph BatchColumn{
+overlap=scale;
 node[shape=circle,fixedsize=1]
 edge[color="gray", style="setlinewidth(2)"]
 	"f0"--"x61" 

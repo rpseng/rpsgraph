@@ -1,6 +1,7 @@
 graph Ammonia {
-// Steady State ammonia process
-node[shape=circle,fixedsize=1]
+overlap=scale;
+// Steady State ammonia process, build image with neato
+node[shape=circle,fixedsize=1.5]
 edge[color="gray", style="setlinewidth(2)"]
 
 f1--x2	f1--x3	f1--x4	f1--x5	f1--x6	f1--x7	f1--x8	f1--x10	
